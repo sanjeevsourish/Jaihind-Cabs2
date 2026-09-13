@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Book a Cab | Jaihind Cabs Kanyakumari</title>
+    <meta name="description" content="Book a cab, van, bus ticket or train ticket with Jaihind Cabs, Kanyakumari. Serving destinations across South India.">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/booking.css">
+</head>
+
+<body>
+
+    <!-- PRELOADER -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container header-container">
+
+            <a href="index.html" class="logo">
+                <img src="../images/logo/jaihind-logo.png" alt="Jaihind Cabs Logo">
+            </a>
+
+            <nav class="nav-menu">
+
+                <a href="index.html" class="nav-link">Home</a>
+
+                <a href="about.html" class="nav-link">About</a>
+
+                <a href="services.html" class="nav-link">Services</a>
+
+                <a href="destinations.html" class="nav-link">Destinations</a>
+
+                <a href="booking.html" class="nav-link active">Booking</a>
+
+                <a href="contact.html" class="nav-link">Contact</a>
+
+                <a href="booking.html" class="nav-button">
+                    Book Now
+                </a>
+
+            </nav>
+
+            <button class="menu-toggle" aria-label="Open Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+    </header>
+
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+
+        <div class="page-hero-overlay"></div>
+
+        <div class="container page-hero-content">
+
+            <span class="section-label">
+                JAIHIND CABS
+            </span>
+
+            <h1>
+                Book Your Journey
+            </h1>
+
+            <p>
+                Tell us your travel details and our team will get in touch with you.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- BOOKING SECTION -->
+    <section class="contact-section booking-page-section">
+
+        <div class="container">
+
+            <div class="section-heading centered">
+
+                <span class="section-label">
+                    EASY BOOKING
+                </span>
+
+                <h2>
+                    Plan Your Trip With Us
+                </h2>
+
+                <p>
+                    Fill in your travel details below. Your booking information
+                    will be prepared for WhatsApp and sent directly to Jaihind Cabs.
+                </p>
+
+            </div>
+
+
+            <div class="booking-layout">
+
+
+                <!-- LEFT INFORMATION -->
+                <div class="booking-info">
+
+                    <div class="booking-info-card">
+
+                        <div class="info-icon">
+                            🚕
+                        </div>
+
+                        <h3>
+                            Cab Service
+                        </h3>
+
+                        <p>
+                            Comfortable and reliable cab service for local,
+                            outstation and South India journeys.
+                        </p>
+
+                    </div>
+
+
+                    <div class="booking-info-card">
+
+                        <div class="info-icon">
+                            🚐
+                        </div>
+
+                        <h3>
+                            Van Service
+                        </h3>
+
+                        <p>
+                            Convenient travel options for families, groups
+                            and longer journeys.
+                        </p>
+
+                    </div>
+
+
+                    <div class="booking-info-card">
+
+                        <div class="info-icon">
+                            🚌
+                        </div>
+
+                        <h3>
+                            Bus Ticket Booking
+                        </h3>
+
+                        <p>
+                            Contact our team for bus ticket booking assistance
+                            across South India.
+                        </p>
+
+                    </div>
+
+
+                    <div class="booking-info-card">
+
+                        <div class="info-icon">
+                            🚆
+                        </div>
+
+                        <h3>
+                            Train Ticket Booking
+                        </h3>
+
+                        <p>
+                            Get assistance with train ticket booking for
+                            your planned journey.
+                        </p>
+
+                    </div>
+
+
+                    <div class="booking-info-note">
+
+                        <strong>
+                            Need help before booking?
+                        </strong>
+
+                        <p>
+                            Call Jaihind Cabs directly.
+                        </p>
+
+                        <a href="tel:9940162462">
+                            📞 99401 62462
+                        </a>
+
+                        <a href="tel:9442162462">
+                            📞 94421 62462
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- BOOKING FORM -->
+                <div class="booking-form-card">
+
+                    <div class="booking-form-header">
+
+                        <span class="section-label">
+                            BOOKING FORM
+                        </span>
+
+                        <h3>
+                            Send Your Travel Details
+                        </h3>
+
+                        <p>
+                            Please enter the details below.
+                        </p>
+
+                    </div>
+
+
+                    <form id="bookingForm" class="booking-form">
+
+
+                        <!-- NAME + MOBILE -->
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label for="customerName">
+                                    Full Name
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="customerName"
+                                    name="customerName"
+                                    placeholder="Enter your name"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="customerPhone">
+                                    Mobile Number
+                                </label>
+
+                                <input
+                                    type="tel"
+                                    id="customerPhone"
+                                    name="customerPhone"
+                                    placeholder="10-digit mobile number"
+                                    inputmode="numeric"
+                                    maxlength="10"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- SERVICE + PASSENGERS -->
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label for="serviceType">
+                                    Service
+                                </label>
+
+                                <select
+                                    id="serviceType"
+                                    name="serviceType"
+                                    required
+                                >
+
+                                    <option value="">
+                                        Select Service
+                                    </option>
+
+                                    <option value="Cab Service">
+                                        Cab Service
+                                    </option>
+
+                                    <option value="Van Service">
+                                        Van Service
+                                    </option>
+
+                                    <option value="Bus Ticket Booking">
+                                        Bus Ticket Booking
+                                    </option>
+
+                                    <option value="Train Ticket Booking">
+                                        Train Ticket Booking
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="passengers">
+                                    Number of Passengers
+                                </label>
+
+                                <select
+                                    id="passengers"
+                                    name="passengers"
+                                    required
+                                >
+
+                                    <option value="">
+                                        Select Passengers
+                                    </option>
+
+                                    <option value="1">
+                                        1 Passenger
+                                    </option>
+
+                                    <option value="2">
+                                        2 Passengers
+                                    </option>
+
+                                    <option value="3">
+                                        3 Passengers
+                                    </option>
+
+                                    <option value="4">
+                                        4 Passengers
+                                    </option>
+
+                                    <option value="5">
+                                        5 Passengers
+                                    </option>
+
+                                    <option value="6">
+                                        6 Passengers
+                                    </option>
+
+                                    <option value="7">
+                                        7 Passengers
+                                    </option>
+
+                                    <option value="8">
+                                        8 Passengers
+                                    </option>
+
+                                    <option value="9">
+                                        9 Passengers
+                                    </option>
+
+                                    <option value="10+">
+                                        10+ Passengers
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- PICKUP + DESTINATION -->
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label for="pickupLocation">
+                                    Pickup Location
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="pickupLocation"
+                                    name="pickupLocation"
+                                    placeholder="Where should we pick you up?"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="destination">
+                                    Destination
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="destination"
+                                    name="destination"
+                                    placeholder="Where are you travelling?"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- DATE + TRIP TYPE -->
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label for="travelDate">
+                                    Travel Date
+                                </label>
+
+                                <input
+                                    type="date"
+                                    id="travelDate"
+                                    name="travelDate"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="tripType">
+                                    Trip Type
+                                </label>
+
+                                <select
+                                    id="tripType"
+                                    name="tripType"
+                                    required
+                                >
+
+                                    <option value="">
+                                        Select Trip Type
+                                    </option>
+
+                                    <option value="One Way">
+                                        One Way
+                                    </option>
+
+                                    <option value="Round Trip">
+                                        Round Trip
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- SUBMIT -->
+                        <button
+                            type="submit"
+                            class="btn btn-primary booking-submit"
+                        >
+                            Send Booking Request
+                            <span>→</span>
+                        </button>
+
+
+                        <p class="booking-form-note">
+                            Your booking details will be prepared for WhatsApp.
+                        </p>
+
+
+                        <!-- WHATSAPP CONFIRMATION -->
+                        <div
+                            id="bookingConfirmation"
+                            class="booking-confirmation"
+                            style="display: none;"
+                        ></div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- QUICK CTA -->
+    <section class="booking-cta">
+
+        <div class="container booking-cta-container">
+
+            <div class="booking-cta-content">
+
+                <span class="section-label">
+                    NEED ASSISTANCE?
+                </span>
+
+                <h2>
+                    Prefer to Talk Directly?
+                </h2>
+
+                <p>
+                    Our team at Jaihind Cabs is ready to help you
+                    plan your journey.
+                </p>
+
+            </div>
+
+
+            <div class="booking-cta-action">
+
+                <a href="tel:9940162462" class="btn btn-primary">
+                    Call 99401 62462
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-grid">
+
+
+                <!-- BRAND -->
+                <div class="footer-column">
+
+                    <a href="index.html" class="footer-logo">
+                        <img
+                            src="../images/logo/jaihind-logo.png"
+                            alt="Jaihind Cabs"
+                        >
+                    </a>
+
+                    <p>
+                        Reliable cab, van, bus ticket and train ticket
+                        booking services from Kanyakumari across South India.
+                    </p>
+
+                </div>
+
+
+                <!-- QUICK LINKS -->
+                <div class="footer-column">
+
+                    <h4>
+                        Quick Links
+                    </h4>
+
+                    <a href="index.html">
+                        Home
+                    </a>
+
+                    <a href="about.html">
+                        About
+                    </a>
+
+                    <a href="services.html">
+                        Services
+                    </a>
+
+                    <a href="destinations.html">
+                        Destinations
+                    </a>
+
+                    <a href="booking.html">
+                        Booking
+                    </a>
+
+                    <a href="contact.html">
+                        Contact
+                    </a>
+
+                </div>
+
+
+                <!-- SERVICES -->
+                <div class="footer-column">
+
+                    <h4>
+                        Our Services
+                    </h4>
+
+                    <a href="services.html">
+                        Cab Service
+                    </a>
+
+                    <a href="services.html">
+                        Van Service
+                    </a>
+
+                    <a href="services.html">
+                        Bus Ticket Booking
+                    </a>
+
+                    <a href="services.html">
+                        Train Ticket Booking
+                    </a>
+
+                </div>
+
+
+                <!-- CONTACT -->
+                <div class="footer-column">
+
+                    <h4>
+                        Contact Us
+                    </h4>
+
+                    <a href="tel:9940162462">
+                        📞 99401 62462
+                    </a>
+
+                    <a href="tel:9442162462">
+                        📞 94421 62462
+                    </a>
+
+                    <a href="mailto:jaihindcabskanyakumari@gmail.com">
+                        ✉ jaihindcabskanyakumari@gmail.com
+                    </a>
+
+                    <p>
+                        📍 South Car Street,<br>
+                        Kanyakumari
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    © <span id="currentYear"></span>
+                    Jaihind Cabs. All Rights Reserved.
+                </p>
+
+                <p>
+                    Owned by Aiyappan.E
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- MOBILE ACTION BAR -->
+    <div class="mobile-action-bar">
+
+        <a href="tel:9940162462">
+            📞
+            <span>Call</span>
+        </a>
+
+        <a href="booking.html" class="mobile-book">
+            🚕
+            <span>Book</span>
+        </a>
+
+        <a href="https://wa.me/919940162462" target="_blank" rel="noopener noreferrer">
+            💬
+            <span>WhatsApp</span>
+        </a>
+
+    </div>
+
+
+    <!-- BACK TO TOP -->
+    <button
+        class="back-to-top"
+        aria-label="Back to top"
+    >
+        ↑
+    </button>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="js/script.js"></script>
+    <script src="js/booking.js"></script>
+
+</body>
+</html>

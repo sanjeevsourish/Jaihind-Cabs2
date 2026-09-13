@@ -1,0 +1,693 @@
+.sightseeing-hero {
+    position: relative;
+    min-height: 72vh;
+    display: flex;
+    align-items: center;
+    background-image: url("../images/destinations/tamilnadu/kanyakumari.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.sightseeing-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.82) 0%,
+        rgba(0, 0, 0, 0.62) 42%,
+        rgba(0, 0, 0, 0.25) 75%,
+        rgba(0, 0, 0, 0.12) 100%
+    );
+}
+
+.sightseeing-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 760px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    animation: sightseeingHeroIn 1s ease forwards;
+}
+
+.sightseeing-hero-content > span {
+    display: inline-block;
+    margin-bottom: 18px;
+    color: #ffd000;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.sightseeing-hero-content h1 {
+    margin: 0 0 20px;
+    color: #ffffff;
+    font-size: clamp(44px, 6vw, 78px);
+    line-height: 1.02;
+    font-weight: 800;
+}
+
+.sightseeing-hero-content h1 strong {
+    display: block;
+    color: #ffd000;
+    font-weight: 800;
+}
+
+.sightseeing-hero-content p {
+    max-width: 620px;
+    margin: 0 0 30px;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 1.7;
+    font-weight: 500;
+}
+
+.sightseeing-section {
+    padding: 110px 0;
+    background: #ffffff;
+}
+
+.sightseeing-section .section-heading {
+    margin-bottom: 55px;
+}
+
+.sightseeing-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 32px;
+}
+
+.sightseeing-card {
+    position: relative;
+    overflow: hidden;
+    background: #ffffff;
+    border-radius: 22px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
+    transition:
+        transform 0.45s ease,
+        box-shadow 0.45s ease;
+    opacity: 0;
+    transform: translateY(45px);
+}
+
+.sightseeing-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.sightseeing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 24px 55px rgba(0, 0, 0, 0.18);
+}
+
+.sightseeing-card:nth-child(1) {
+    transition-delay: 0.05s;
+}
+
+.sightseeing-card:nth-child(2) {
+    transition-delay: 0.12s;
+}
+
+.sightseeing-card:nth-child(3) {
+    transition-delay: 0.19s;
+}
+
+.sightseeing-card:nth-child(4) {
+    transition-delay: 0.26s;
+}
+
+.sightseeing-card:nth-child(5) {
+    grid-column: 1 / -1;
+    width: calc(50% - 16px);
+    justify-self: center;
+    transition-delay: 0.33s;
+}
+
+.sightseeing-card img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.7s ease;
+}
+
+.sightseeing-card:hover img {
+    transform: scale(1.08);
+}
+
+.sightseeing-number {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 3;
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #ffd000;
+    color: #111111;
+    font-size: 15px;
+    font-weight: 900;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.sightseeing-content {
+    padding: 28px 30px 32px;
+}
+
+.sightseeing-content > span {
+    display: block;
+    margin-bottom: 9px;
+    color: #d99c00;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.7px;
+}
+
+.sightseeing-content h3 {
+    margin: 0 0 12px;
+    color: #111111;
+    font-size: 25px;
+    line-height: 1.2;
+    font-weight: 800;
+}
+
+.sightseeing-content p {
+    margin: 0;
+    color: #555555;
+    font-size: 15px;
+    line-height: 1.75;
+}
+
+.sightseeing-cta {
+    padding: 75px 0;
+    background: #111111;
+    color: #ffffff;
+}
+
+.sightseeing-cta .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.sightseeing-cta > .container > div {
+    max-width: 720px;
+}
+
+.sightseeing-cta > .container > div > span {
+    display: block;
+    margin-bottom: 12px;
+    color: #ffd000;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.sightseeing-cta h2 {
+    margin: 0 0 12px;
+    color: #ffffff;
+    font-size: clamp(30px, 4vw, 48px);
+    line-height: 1.15;
+    font-weight: 800;
+}
+
+.sightseeing-cta p {
+    margin: 0;
+    color: #cccccc;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.sightseeing-cta .btn {
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+
+.site-footer {
+    background: #0b0b0b;
+}
+
+@keyframes sightseeingHeroIn {
+    from {
+        opacity: 0;
+        transform: translateY(35px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 900px) {
+
+    .sightseeing-hero {
+        min-height: 65vh;
+    }
+
+    .sightseeing-hero-content {
+        padding-top: 85px;
+        padding-bottom: 85px;
+    }
+
+    .sightseeing-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sightseeing-card:nth-child(5) {
+        grid-column: auto;
+        width: 100%;
+    }
+
+    .sightseeing-card img {
+        height: 280px;
+    }
+
+    .sightseeing-cta .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .sightseeing-hero {
+        min-height: 75vh;
+        background-position: center;
+    }
+
+    .sightseeing-hero-overlay {
+        background: rgba(0, 0, 0, 0.58);
+    }
+
+    .sightseeing-hero-content {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .sightseeing-hero-content > span {
+        font-size: 11px;
+        letter-spacing: 1.4px;
+    }
+
+    .sightseeing-hero-content h1 {
+        font-size: 46px;
+        line-height: 1.05;
+    }
+
+    .sightseeing-hero-content p {
+        font-size: 16px;
+        line-height: 1.65;
+    }
+
+    .sightseeing-section {
+        padding: 75px 0;
+    }
+
+    .sightseeing-section .section-heading {
+        margin-bottom: 40px;
+    }
+
+    .sightseeing-grid {
+        gap: 25px;
+    }
+
+    .sightseeing-card {
+        border-radius: 18px;
+    }
+
+    .sightseeing-card img {
+        height: 240px;
+    }
+
+    .sightseeing-number {
+        width: 48px;
+        height: 48px;
+        top: 16px;
+        left: 16px;
+        font-size: 13px;
+    }
+
+    .sightseeing-content {
+        padding: 23px 22px 27px;
+    }
+
+    .sightseeing-content h3 {
+        font-size: 22px;
+    }
+
+    .sightseeing-content p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .sightseeing-cta {
+        padding: 60px 0;
+    }
+
+    .sightseeing-cta h2 {
+        font-size: 32px;
+    }
+
+    .sightseeing-cta p {
+        font-size: 15px;
+    }
+
+    .sightseeing-cta .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .sightseeing-hero {
+        min-height: 78vh;
+    }
+
+    .sightseeing-hero-content {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    .sightseeing-hero-content h1 {
+        font-size: 39px;
+    }
+
+    .sightseeing-hero-content p {
+        font-size: 15px;
+    }
+
+    .sightseeing-card img {
+        height: 215px;
+    }
+
+    .sightseeing-content {
+        padding: 21px 19px 25px;
+    }
+
+    .sightseeing-content h3 {
+        font-size: 20px;
+    }
+
+    .sightseeing-content p {
+        font-size: 14px;
+    }
+
+    .sightseeing-cta h2 {
+        font-size: 29px;
+    }
+}
+
+.sightseeing-hero-content > span {
+    animation: sightseeingFadeDown 0.9s ease both;
+}
+
+.sightseeing-hero-content h1 {
+    animation: sightseeingFadeUp 1s 0.15s ease both;
+}
+
+.sightseeing-hero-content p {
+    animation: sightseeingFadeUp 1s 0.3s ease both;
+}
+
+.sightseeing-hero-content .btn {
+    animation: sightseeingFadeUp 1s 0.45s ease both;
+}
+
+.sightseeing-section .section-heading {
+    transition:
+        opacity 0.9s ease,
+        transform 0.9s ease;
+}
+
+.sightseeing-section .section-heading:not(.visible) {
+    opacity: 0;
+    transform: translateY(35px);
+}
+
+.sightseeing-section .section-heading.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.sightseeing-card {
+    transform: translateY(55px) scale(0.96);
+    opacity: 0;
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+        box-shadow 0.45s ease;
+}
+
+.sightseeing-card.visible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+.sightseeing-card:hover {
+    transform: translateY(-14px) scale(1.015);
+    box-shadow: 0 28px 65px rgba(0, 0, 0, 0.2);
+}
+
+.sightseeing-card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -120%;
+    width: 70%;
+    height: 100%;
+    background: linear-gradient(
+        100deg,
+        transparent,
+        rgba(255, 255, 255, 0.35),
+        transparent
+    );
+    transform: skewX(-20deg);
+    transition: left 0.8s ease;
+    pointer-events: none;
+    z-index: 4;
+}
+
+.sightseeing-card:hover::after {
+    left: 140%;
+}
+
+.sightseeing-card img {
+    transform: scale(1);
+    transition:
+        transform 1s cubic-bezier(0.22, 1, 0.36, 1),
+        filter 0.6s ease;
+}
+
+.sightseeing-card:hover img {
+    transform: scale(1.1);
+    filter: brightness(1.08);
+}
+
+.sightseeing-number {
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+    animation: sightseeingNumberFloat 3s ease-in-out infinite;
+}
+
+.sightseeing-card:hover .sightseeing-number {
+    transform: scale(1.12) rotate(6deg);
+    box-shadow:
+        0 0 0 8px rgba(255, 208, 0, 0.12),
+        0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+.sightseeing-content h3 {
+    transition:
+        color 0.35s ease,
+        transform 0.35s ease;
+}
+
+.sightseeing-card:hover .sightseeing-content h3 {
+    color: #d99c00;
+    transform: translateX(4px);
+}
+
+.sightseeing-content > span {
+    transition:
+        letter-spacing 0.35s ease,
+        color 0.35s ease;
+}
+
+.sightseeing-card:hover .sightseeing-content > span {
+    color: #111111;
+    letter-spacing: 2.2px;
+}
+
+.sightseeing-cta {
+    position: relative;
+    overflow: hidden;
+}
+
+.sightseeing-cta::before {
+    content: "";
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    background: rgba(255, 208, 0, 0.07);
+    top: -220px;
+    right: -100px;
+    animation: sightseeingGlow 6s ease-in-out infinite;
+}
+
+.sightseeing-cta::after {
+    content: "";
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    background: rgba(255, 208, 0, 0.05);
+    bottom: -150px;
+    left: -80px;
+    animation: sightseeingGlow 7s 1s ease-in-out infinite reverse;
+}
+
+.sightseeing-cta .container {
+    position: relative;
+    z-index: 2;
+}
+
+.sightseeing-cta .btn {
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+.sightseeing-cta .btn:hover {
+    transform: translateY(-6px) scale(1.04);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.25);
+}
+
+@keyframes sightseeingFadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes sightseeingFadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(35px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes sightseeingNumberFloat {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+@keyframes sightseeingGlow {
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+
+    50% {
+        transform: scale(1.15);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .sightseeing-card:hover {
+        transform: translateY(-7px) scale(1.01);
+    }
+
+    .sightseeing-card:hover img {
+        transform: scale(1.06);
+    }
+
+    .sightseeing-number {
+        animation: none;
+    }
+
+    .sightseeing-card::after {
+        display: none;
+    }
+
+    .sightseeing-cta::before {
+        width: 280px;
+        height: 280px;
+    }
+
+    .sightseeing-cta::after {
+        width: 190px;
+        height: 190px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .sightseeing-card,
+    .sightseeing-card img,
+    .sightseeing-number,
+    .sightseeing-hero-content > span,
+    .sightseeing-hero-content h1,
+    .sightseeing-hero-content p,
+    .sightseeing-hero-content .btn,
+    .sightseeing-cta::before,
+    .sightseeing-cta::after {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+.sightseeing-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 24px !important;
+}
+
+.sightseeing-grid .sightseeing-card {
+    width: 100% !important;
+}
+
+.sightseeing-grid .sightseeing-card:nth-child(5) {
+    grid-column: 1 / -1 !important;
+    width: calc(50% - 12px) !important;
+    justify-self: center !important;
+}
+
+@media (max-width: 768px) {
+    .sightseeing-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .sightseeing-grid .sightseeing-card:nth-child(5) {
+        grid-column: auto !important;
+        width: 100% !important;
+    }
+}
+
